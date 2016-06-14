@@ -6,3 +6,5 @@ def hello():
 
 # call the method
 hello()
+
+hello()
