@@ -1,0 +1,8 @@
+git remote add <alias_name> URL from Github
+git fetch <alias_name> 
+git merge <alias_name>/<branch_you're_merging>
+
+or if you're confident of the source -- replace last 2 lines with
+
+git pull <alias_name>/<branch_you're_merging>
+
