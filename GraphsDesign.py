@@ -4,10 +4,21 @@ import matplotlib.pyplot as plt
 import networkx as nx
 import sys
 
-print sys.argv[1]
+if len(sys.argv)>1:
+    G = nx.read_edgelist(sys.argv[1],comments="%")
+
+else:
+    print "Need to add an argument with the location of the data file"
+    direc = input("Enter the address of the file inside quotes")
+    if (len(direc)>0):
+        G = nx.read_edgelist(direc, comments = "%")
+    
+
+    
+#print sys.argv[1]
 
 #G = nx.read_edgelist("C:\Users\Thomas\Downloads\\brunson_revolution\out.brunson_revolution_revolution",comments="%")
-G = nx.read_edgelist(sys.argv[1],comments="%")
+
 H = nx.DiGraph(G)
 print H.edges()
 
@@ -28,4 +39,4 @@ nx.draw(G)
 plt.show()
 
 
-#plt.savefig("file_path.png")
+
