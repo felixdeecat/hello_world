@@ -1,0 +1,5 @@
+in cmd type
+	ipython notebook
+
+	this loads jupyter editor on your browser as a graphical interface to python
+
